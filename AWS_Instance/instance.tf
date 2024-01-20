@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket         = "my-first-tf-backend"
+    region         = "ap-south-1"
+    key            = "terraform.tfstate"
+    dynamodb_table = "tf-synamodb-table"
+  }
+}
 
 provider "aws" {
   region     = var.region
