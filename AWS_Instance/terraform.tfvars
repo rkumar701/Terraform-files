@@ -1,0 +1,13 @@
+ports               = [22, 80, 443, 3306, 27017, 1080]
+instance_type       = "t2.medium"
+image_id            = "ami-03f4878755434977f"
+key_pair            = "kube"
+instance_name       = "first-tf-instance"
+access_key          = "AKIA6ODU34IP2PFTGUU7"
+secret_key          = "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"
+region              = "ap-south-1"
+VPC-CIDR            = "10.0.0.0/16"
+VPC-subnet-pub-CIDR = "10.0.0.0/24"
+VPC-subnet-pvt-CIDR = "10.0.1.0/24"
+AZone-a             = "ap-south-1a"
+AZone-b             = "ap-south-1b"
